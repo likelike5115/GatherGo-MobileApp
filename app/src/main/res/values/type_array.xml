@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>SocialGathering</item>
+        <item>StudyTogether</item>
+        <item>GymBuddies</item>
+        <item>Networking</item>
+        <item>Workshop</item>
+        <item>Outdoor</item>
+        <item>Indoor</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

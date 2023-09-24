@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:ignore="MissingConstraints">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        tools:context=".HomeFragment">
+
+        <RelativeLayout
+            android:id="@+id/locationInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/locationIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_location_foreground" />
+
+            <TextView
+                android:id="@+id/locationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/locationIcon"
+                android:text="Current location" />
+
+            <LinearLayout
+                android:id="@+id/editLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locationTitle"
+                android:layout_alignStart="@id/locationTitle">
+
+                <TextView
+                    android:id="@+id/locationContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Failed to retrieve location ..."
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@id/locationContent"
+                    android:layout_toEndOf="@id/locationContent"
+                    android:src="@drawable/ic_edit_foreground" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <SearchView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationInfo"
+            android:iconifiedByDefault="false"
+            android:queryHint="Event Name or Event Time"></SearchView>
+
+        <LinearLayout
+            android:id="@+id/filterRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_bar"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/socialButton"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:tag="SocialGathering"
+                android:text="Social \nGathering"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/studyButton"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:tag="StudyTogether"
+                android:text="Study \nTogether"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/gymButton"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:tag="GymBuddies"
+                android:text="Gym \nBuddies"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/networkingButton"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:tag="Networking"
+                android:text="Networking"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filterRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filterRow1"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/cardview_dark_background">
+
+            <Button
+                android:id="@+id/workshopButton"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:tag="Workshop"
+                android:text="Workshop"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/outdoorButton"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:tag="Outdoor"
+                android:text="Outdoor"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/indoorButton"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:tag="Indoor"
+                android:text="Indoor"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/othersButton"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:tag="Others"
+                android:text="Others"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eventsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/filterRow2" />
+    </RelativeLayout>
+</ScrollView>
+
+

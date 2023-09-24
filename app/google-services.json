@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1066589638476",
+    "project_id": "gathergo-8373a",
+    "storage_bucket": "gathergo-8373a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066589638476:android:1c62cdacdb7a9d79fc49e9",
+        "android_client_info": {
+          "package_name": "edu.northeastern.gathergo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066589638476-oba3qjrasqpifbcfjgib2aptf3p9s233.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4fqnMLYLzdtxBul3UFa9Gp8BbggxM52U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066589638476-oba3qjrasqpifbcfjgib2aptf3p9s233.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_title_font_size">20sp</dimen>
+    <dimen name="button_margin_top">8dp</dimen>
+    <dimen name="text_input">15sp</dimen>
+    <dimen name="padding_inner_vertical">15dp</dimen>
+    <dimen name="margin_outer_horizontal">15dp</dimen>
+</resources>
